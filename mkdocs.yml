@@ -1,0 +1,68 @@
+site_name: Carbyne Games Documentation
+site_url: http://209.23.122.41/documentation/
+#dev_addr: 209.23.122.41:8000
+theme:
+  name: material
+  logo: assets/marketing_images/general.logo.png
+  favicon: assets/marketing_images/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.path
+    - navigation.sections
+    - navigation.instant.progress
+  #  - toc.integrate
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/tiktok
+      link: http://tiktok.com/@carbyne.games
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CarbyneGames
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/100126905
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true  
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: |
+  &copy; 2024 <a href="https://carbynegames.com"  target="_blank" rel="noopener">Carbyne Games</a>
